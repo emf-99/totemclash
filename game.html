@@ -24,7 +24,7 @@
         </div>
       </div>
       
-    <div id="game-board">
+      <div id="game-board">
         <div class="player-hand" id="player1-hand">
           <h2>Player 1's Hand</h2>
           <div class="card-container">
@@ -39,10 +39,15 @@
           </div>
         </div>
       
-        <div class="draw-pile">
-          <h2>Draw Pile</h2>
-          <div class="card">Action Pile</div>
-          <div class="card">Totem Pile</div>
+        <div class="center-section">
+          <div class="draw-pile">
+            <h2>Draw Pile</h2>
+            <div class="card">Action Pile</div>
+            <button id="draw-action-btn">Draw Action Card</button>
+            <div class="card">Totem Pile</div>
+            <button id="draw-totem-btn">Draw Totem Card</button>
+          </div>
+          <button id="attack-button">Attack</button>
         </div>
       
         <div class="player-hand" id="player2-hand">
@@ -58,9 +63,9 @@
             <div class="card face-down">Card 6</div>
           </div>
         </div>
-    </div>
+      </div>      
       
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

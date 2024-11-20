@@ -1,17 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Pixelify+Sans:wght@400..700&display=swap');
 
+/* Fullscreen layout */
 body {
-    font-family: 'Karla', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Karla', sans-serif;
     background: url('images/game_background.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+  }
+  
+  /* Game Board Layout */
+  #game-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Player Hands */
+  .player-hand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .card {
+    width: 80px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Karla', sans-serif;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
+  
+  .card.face-down {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Center Section for Draw Pile */
+  .center-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between draw buttons and attack button */
+    flex: 1;
+  }
+  
+  .draw-pile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between card and draw button */
+  }
+  
+  button {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Attack Button */
+  #attack-button {
+    margin-top: 20px;
+    background-color: #e53935; /* Bold red color */
+  }
+  
+  #attack-button:hover {
+    background-color: #d32f2f;
+  }
+  
   
   #start-screen {
     display: flex;
@@ -92,29 +189,32 @@ body {
     font-family: 'Pixelify Sans', sans-serif;
   }
   
-  #game-board {
+ /* Game Board Layout */
+#game-board {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    height: 100%;
+    width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
   }
   
-  .player-hand, .draw-pile {
+  /* Player Hands */
+  .player-hand {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; /* Equal spacing between the three main sections */
+    flex: 1;
+    width: 100%;
     text-align: center;
   }
   
   .card-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between cards */
+    gap: 10px;
     margin: 10px 0;
   }
   
@@ -130,15 +230,57 @@ body {
     font-family: 'Karla', sans-serif;
     color: #000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
   }
   
   .card.face-down {
     background-color: #333;
-    color: #fff; /* Face-down cards appear darker */
+    color: #fff;
   }
   
-  .draw-pile .card {
-    background-color: #f9a825; /* Distinct color for draw piles */
+  /* Center Section for Draw Pile */
+  .center-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between draw buttons and attack button */
+    flex: 1;
   }
   
+  .draw-pile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between card and draw button */
+  }
+  
+  button {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Attack Button */
+  #attack-button {
+    margin-top: 20px;
+    background-color: #e53935; /* Bold red color */
+  }
+  
+  #attack-button:hover {
+    background-color: #d32f2f;
+  }
