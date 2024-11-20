@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gameplay - Totem Clash</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top-game-container">
+        <div class="player-1-info">
+          <h1>Player 1</h1>
+          <h2>Food Points: <span id="player1-points">100</span></h2>
+        </div>
+      
+        <div class="round-info">
+          <h2>Round: <span id="round-number">1</span></h2>
+          <h2>Time Left: <span id="timer">30</span> seconds</h2>
+        </div>
+      
+        <div class="player-2-info">
+          <h1>Player 2</h1>
+          <h2>Food Points: <span id="player2-points">100</span></h2>
+        </div>
+      </div>
+      
+    <div id="game-board">
+        <div class="player-hand" id="player1-hand">
+          <h2>Player 1's Hand</h2>
+          <div class="card-container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+          </div>
+          <div class="card-container">
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+            <div class="card">Card 6</div>
+          </div>
+        </div>
+      
+        <div class="draw-pile">
+          <h2>Draw Pile</h2>
+          <div class="card">Action Pile</div>
+          <div class="card">Totem Pile</div>
+        </div>
+      
+        <div class="player-hand" id="player2-hand">
+          <h2>Player 2's Hand</h2>
+          <div class="card-container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+          </div>
+          <div class="card-container">
+            <div class="card face-down">Card 4</div>
+            <div class="card face-down">Card 5</div>
+            <div class="card face-down">Card 6</div>
+          </div>
+        </div>
+    </div>
+      
+
+  <script>
+    // Logic for gameplay can go here
+    document.getElementById("end-game-btn").addEventListener("click", () => {
+      window.location.href = "index.html"; // Redirect back to the start screen
+    });
+  </script>
+</body>
+</html>

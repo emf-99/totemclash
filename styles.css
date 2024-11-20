@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/game_background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #start-screen {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Align text in the center */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  p, ul {
+    text-align: left; /* Keep text paragraphs aligned left for readability */
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul ul {
+    margin-left: 20px;
+    list-style: circle; /* Sub-items have a circle bullet point */
+  }
+  
+  button {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Jungle green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  #top-game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 10px 20px;
+    position: absolute; /* Fix it at the top */
+    top: 0;
+    width: 100%;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .player-1-info, .player-2-info, .round-info {
+    text-align: center;
+  }
+  
+  .round-info {
+    flex: 1; /* Takes up the middle space */
+    margin: 0 20px;
+  }
+  
+  h1, h2 {
+    margin: 5px;
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+  
+  #game-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .player-hand, .draw-pile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Equal spacing between the three main sections */
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between cards */
+    margin: 10px 0;
+  }
+  
+  .card {
+    width: 80px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .card.face-down {
+    background-color: #333;
+    color: #fff; /* Face-down cards appear darker */
+  }
+  
+  .draw-pile .card {
+    background-color: #f9a825; /* Distinct color for draw piles */
+  }
+  

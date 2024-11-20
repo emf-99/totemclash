@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Totem Clash</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-screen">
+    <div class="centered-content">
+      <h1>Totem Clash</h1>
+      <div id="instructions">
+        <h2>Gameplay Instructions</h2>
+        <p><strong>Game Start:</strong> This game is best of 3 rounds.</p>
+        <p><strong>Round Start:</strong> Both players (Player 1 and Player 2) start with 100 food points and 3 random Totem Cards (always one Head, Torso, and Leg Card each). Then the players draw 2 Action Cards and 1 Totem Card to form their Hand Deck. This Deck must always have 3 cards.</p>
+        <p><strong>Gameplay in Turn:</strong> Player must discard one card — a Totem Card or an Action Card.</p>
+        <ul>
+          <li>If they discard an Action Card:
+            <ul>
+              <li><strong>Herbivore Action Card:</strong> The points in the corner of the card would be added to the total HP of the Totem Cards.</li>
+              <li><strong>Carnivore Action Card:</strong> The player can attack the other player. If the attacker's total Totem HP is greater, then the attack is successful. If the defender's total Totem HP is greater, then the attack is not successful.</li>
+            </ul>
+          </li>
+          <li>If they discard a Totem Card, the player must redraw from the Totem Card Pile. They have the option to swap out their Totem Cards in their Totem.</li>
+        </ul>
+        <p><strong>Round End:</strong> The round ends when a player has 0 food points left. The winner is the player with the most food points. The victor is awarded one round point.</p>
+        <p><strong>Game End:</strong> The game ends when a player has 2 round points.</p>
+      </div>
+      <button id="start-game-btn">Start Game</button>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
