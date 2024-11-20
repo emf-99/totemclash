@@ -15,102 +15,77 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
   }
-  
-  /* Game Board Layout */
-  #game-board {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+
+  img {
+    width: 100px;
+    height: 140px;
   }
   
-  /* Player Hands */
-  .player-hand {
+/* Adjusted Game Board Layout */
+.player-hand {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
   }
   
-  .card-container {
+  .card-row {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 10px 0;
   }
   
-  .card {
-    width: 80px;
-    height: 120px;
-    background-color: #fff;
+  .card-container {
+    width: 100px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #4caf50;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: 'Karla', sans-serif;
-    color: #000;
+    justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
-  .card.face-down {
+  .card-container.face-down {
     background-color: #333;
-    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
   
-  /* Center Section for Draw Pile */
+  /* Center Section Styling */
   .center-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Space between draw buttons and attack button */
-    flex: 1;
-  }
-  
-  .draw-pile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Space between card and draw button */
+    margin: 20px 0;
   }
   
   button {
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
     padding: 10px 20px;
     background-color: #4caf50;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
   }
   
   button:hover {
     background-color: #45a049;
-    transform: scale(1.05);
   }
   
-  button:active {
-    transform: scale(0.95);
-  }
-  
-  /* Attack Button */
   #attack-button {
     margin-top: 20px;
-    background-color: #e53935; /* Bold red color */
+    background-color: #e53935;
   }
   
   #attack-button:hover {
     background-color: #d32f2f;
   }
+  
   
   
   #start-screen {
