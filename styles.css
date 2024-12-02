@@ -142,8 +142,9 @@ body {
 
   #top-game-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     padding: 10px 20px;
     position: absolute; /* Fix it at the top */
@@ -151,6 +152,27 @@ body {
     width: 100%;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+  }
+
+  #play-music {
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
   }
   
   .player-1-info, .player-2-info, .round-info {
@@ -176,6 +198,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 20px;
+    margin-top: 5rem;
     box-sizing: border-box;
   }
   
@@ -238,10 +261,14 @@ body {
     background-color: #4caf50;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 100px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #draw-action-btn {
+    margin-bottom: 40px;
   }
   
   button:hover {

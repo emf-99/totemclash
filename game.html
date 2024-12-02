@@ -9,19 +9,28 @@
 <body>
   <!-- Top Game Container -->
   <div id="top-game-container">
-    <div class="player-1-info">
-      <h1>Player 1</h1>
-      <h2>Food Points: <span id="player1-points">100</span></h2>
+    <div class="top">
+      <div class="player-1-info">
+        <h1>Player 1</h1>
+        <h2>Food Points: <span id="player1-points">100</span></h2>
+      </div>
+
+      <div class="round-info">
+        <h2>Round: <span id="round-number">1</span></h2>
+        <h2>Time Left: <span id="timer">30</span> seconds</h2>
+      </div>
+
+      <div class="player-2-info">
+        <h1>Player 2</h1>
+        <h2>Food Points: <span id="player2-points">100</span></h2>
+      </div>
     </div>
 
-    <div class="round-info">
-      <h2>Round: <span id="round-number">1</span></h2>
-      <h2>Time Left: <span id="timer">30</span> seconds</h2>
-    </div>
-
-    <div class="player-2-info">
-      <h1>Player 2</h1>
-      <h2>Food Points: <span id="player2-points">100</span></h2>
+    <div class="bottom">
+      <div class="music">
+      <audio id="backgroundMusic" src="jungle-music.mp3"></audio>
+        <button id="play-music">Play Music</button>
+      </div>
     </div>
   </div>
 
@@ -66,9 +75,9 @@
         <div id="player2-card3" class="card-container"></div>
       </div>
       <div class="card-row">
-        <div id="player2-card4" class="card-container face-down"></div>
-        <div id="player2-card5" class="card-container face-down"></div>
-        <div id="player2-card6" class="card-container face-down"></div>
+        <div id="player2-card4" class="card-container"></div>
+        <div id="player2-card5" class="card-container"></div>
+        <div id="player2-card6" class="card-container"></div>
       </div>
     </div>
   </div>
