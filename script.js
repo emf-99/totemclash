@@ -1,9 +1,3 @@
-document.getElementById("play-music").addEventListener("click", () => {
-  backgroundMusic.play()
-    .then(() => console.log("Manual music playback started."))
-    .catch(error => console.error("Manual playback failed:", error));
-});
-
 // Redirect to game.html when Start Game button is clicked
 const startGameBtn = document.getElementById("start-game-btn");
 if (startGameBtn) {
@@ -311,3 +305,10 @@ updateFoodPoints();
 renderInitialCards();
 highlightCurrentPlayer();
 startRoundTimer();
+
+
+document.getElementById("play-music").addEventListener("click", () => {
+  backgroundMusic.play()
+    .then(() => console.log("Manual music playback started."))
+    .catch(error => console.error("Manual playback failed:", error));
+});
