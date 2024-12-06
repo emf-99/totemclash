@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Pixelify+Sans:wght@400..700&display=swap');
 
-/* Fullscreen layout */
+/* fullscreen layout */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
-    background: url('images/game_background.png') no-repeat center center fixed;
+    background: url('images/game_background.png') no-repeat center center;
     background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    display: flex; /* Use Flexbox on the body */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
 
   img {
@@ -21,7 +21,7 @@ body {
     height: 140px;
   }
   
-/* Adjusted Game Board Layout */
+/* adjusted game board layout */
 .player-hand {
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
   
-  /* Center Section Styling */
+  /* center section styling */
   .center-section {
     display: flex;
     flex-direction: column;
@@ -90,11 +90,11 @@ body {
   
   #start-screen {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Align text in the center */
-    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for readability */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     border-radius: 10px;
     max-width: 80%;
@@ -110,7 +110,7 @@ body {
   }
   
   p, ul {
-    text-align: left; /* Keep text paragraphs aligned left for readability */
+    text-align: left; 
     margin: 10px 0;
   }
   
@@ -121,7 +121,7 @@ body {
   
   ul ul {
     margin-left: 20px;
-    list-style: circle; /* Sub-items have a circle bullet point */
+    list-style: circle; 
   }
   
   button {
@@ -129,7 +129,7 @@ body {
     font-size: 18px;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4caf50; /* Jungle green */
+    background-color: #4caf50;
     color: white;
     border: none;
     cursor: pointer;
@@ -145,9 +145,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 10px 20px;
-    position: absolute; /* Fix it at the top */
+    position: absolute; 
     top: 0;
     width: 100%;
     color: white;
@@ -180,7 +180,7 @@ body {
   }
   
   .round-info {
-    flex: 1; /* Takes up the middle space */
+    flex: 1; 
     margin: 0 20px;
   }
   
@@ -189,7 +189,7 @@ body {
     font-family: 'Pixelify Sans', sans-serif;
   }
   
- /* Game Board Layout */
+ /* game board layout */
 #game-board {
     display: flex;
     flex-direction: row;
@@ -202,7 +202,7 @@ body {
     box-sizing: border-box;
   }
   
-  /* Player Hands */
+  /* player hands */
   .player-hand {
     display: flex;
     flex-direction: column;
@@ -238,12 +238,12 @@ body {
     color: #fff;
   }
   
-  /* Center Section for Draw Pile */
+  /* center section for draw pile */
   .center-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Space between draw buttons and attack button */
+    gap: 20px; 
     flex: 1;
   }
   
@@ -251,7 +251,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Space between card and draw button */
+    gap: 10px; 
   }
   
   button {
@@ -280,12 +280,36 @@ body {
     transform: scale(0.95);
   }
   
-  /* Attack Button */
   #attack-button {
     margin-top: 20px;
-    background-color: #e53935; /* Bold red color */
+    background-color: #e53935; 
   }
   
   #attack-button:hover {
     background-color: #d32f2f;
   }
+
+  #player1-card1, #player2-card1 {
+    rotate: -25deg;
+  }
+
+  #player1-card3, #player2-card3 {
+    rotate: 25deg;
+  }
+
+  .action-display {
+    width: 60px;
+    height: 90px;
+    margin-left: 10px;
+    border: 2px dashed gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  .action-display img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
